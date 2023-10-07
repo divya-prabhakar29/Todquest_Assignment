@@ -1,0 +1,19 @@
+def main():
+    n = int(input())
+    j = n-1
+    for i in range(0,n):
+        if i==0:
+            print('* '*(n-i), end=' ')
+            print()
+        if i==n-1:
+            print('*'*(n-i), end=' ')
+            print()
+        if i>0 and i<n-1:
+            print('*'+' '*(j-i)+'*', end=' ')
+            print()
+        print()
+
+
+
+if _name=='__main_':
+    main()
